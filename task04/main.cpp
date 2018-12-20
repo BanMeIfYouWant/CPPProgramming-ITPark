@@ -9,7 +9,7 @@ int main() {
 	std::cout << "Please, select type of sorting:" << std::endl;
 	std::cout << "1. Ascending" << std::endl;
 	std::cout << "2. Descending" << std::endl;
-    int typesort = 0;
+    int typesort;
 	std::cin >> typesort;
     if (typesort == 1 || typesort == 2) {
         quickSort(array, 0, size - 1, typesort);

@@ -1,6 +1,5 @@
-OBJ = main.o sort.lib
-main : ${OBJ}
-	g++ ${OBJ} -o main
+main : main.o sort.lib
+	g++ main.o sort.lib -o main
 main.o : main.cpp sort.hpp
 	g++ -c main.cpp
 exchange.o : exchange.cpp
